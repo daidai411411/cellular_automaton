@@ -151,6 +151,11 @@ class Field {
 		let cx = Math.floor(px / this.cell_size);
 		let cy = Math.floor(py / this.cell_size);
 
+		if (cx < 0) cx += this.n_column;
+		else if (this.n_column <= cx) cx -= this.n_column;
+		if (cy < 0) cy += this.n_row;
+		else if (this.n_row <= cy) cy -= this.n_row;
+
 		return {x: cx, y: cy};
 	}
 
@@ -162,9 +167,9 @@ class Field {
 		switch (control_edge_rule.getValue()) {
 		case "loop":
 			if (cx < 0) cx += this.n_column;
-			if (this.n_column <= cx) cx -= this.n_column;
+			else if (this.n_column <= cx) cx -= this.n_column;
 			if (cy < 0) cy += this.n_row;
-			if (this.n_row <= cy) cy -= this.n_row;
+			else if (this.n_row <= cy) cy -= this.n_row;
 			break;
 		
 		case "dead":
