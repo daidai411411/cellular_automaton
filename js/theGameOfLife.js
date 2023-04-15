@@ -125,7 +125,7 @@ class Field {
 	constructor() {
 		this.width = canvas.width;
 		this.height = canvas.height;
-		this.cell_size = 10;
+		this.cell_size = 5;
 		this.n_column = this.width / this.cell_size;
 		this.n_row = this.height / this.cell_size;
 	
