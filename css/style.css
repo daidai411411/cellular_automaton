@@ -1,0 +1,52 @@
+/* 全体 */
+
+a:hover {
+	color: green;
+}
+
+/* ヘッダー */
+
+header {
+	height: 100px;
+	background: white;
+	font-size: 5em;
+	color: red;
+}
+
+/* ボディー */
+
+body {
+	background: lightblue;
+	text-align: center;
+}
+
+/* キャンバス */
+
+canvas {
+	margin: 10px;
+	border: 1px solid #000032;
+}
+
+/* テーブル */
+
+table {
+	margin: auto;
+	border: 1px solid #000032;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+th, td {
+	border: 1px solid #000032;
+}
+
+/* フッター */
+
+footer {
+	background: white;
+	height: 20px;
+}
+
+footer a {
+	display: inline;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+	<head>
+		<link rel="icon" href="./img/icon.png">
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<meta charset="UTF-8">
+		<title>ライフゲーム | セル・オートマトン</title>
+	</head>
+	
+	<body>
+		<header>
+			セル・オートマトン
+		</header>
+
+		<div id="main">
+			<h1>
+				ライフゲーム
+			</h1>
+			<canvas id="canvas" width="1280" height="800"></canvas>
+			
+			<br>
+
+			<table>
+				<tr>
+					<th>実行</th>
+					<td><input id="run" type="checkbox"></td>
+				</tr>
+				<tr>
+					<th>世代 / 秒</th>
+					<td>
+						<span id="value" style="display: block; text-align: center;">10</span>
+						<input id="step_p_sec" type="range" min="1" max="60" value="10">
+					</td>
+
+				</tr>
+				<tr>
+					<th>端での振る舞い</th>
+					<td><select id="edge_rule" size="2">
+						<option value="loop" selected>ループ</option>
+						<option value="dead" >全て死亡セル</option>
+					</select></td>
+				</tr>
+				<tr>
+					<th>リセット</th>
+					<td>
+						<input id="reset" type="button" value="リセット">
+					</td>
+
+				</tr>
+
+			</table>
+			<br><br>
+		</div>
+		
+		<footer>
+			<a href="./index.html">トップページ</a>
+		</footer>
+
+		<script src="./js/theGameOfLife.js"></script>
+	</body>
+</html>
