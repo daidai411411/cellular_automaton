@@ -240,6 +240,7 @@ class ControlRun {
 	}
 
 	onChange() {
+		window.open();
 		if (this.element.checked) {
 			window.clearInterval(this.intervalID);
 			this.intervalID = window.setInterval(function() {field.nextStep();}, 1000 / control_step_p_sec.getValue());
