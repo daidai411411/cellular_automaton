@@ -247,7 +247,7 @@ class ControlRun {
 			window.clearInterval(this.intervalID);
 		}
 	}
-};
+}
 const control_run = new ControlRun();
 control_run.element.addEventListener("change", function() {control_run.onChange();})
 
@@ -268,7 +268,7 @@ class ControlStepPSec {
 			control_run.intervalID = window.setInterval(function() {field.nextStep();}, 1000 / control_step_p_sec.getValue());
 		}
 	}
-};
+}
 const control_step_p_sec = new ControlStepPSec();
 control_step_p_sec.range_element.addEventListener("input", function() {control_step_p_sec.onInput();});
 
@@ -280,7 +280,7 @@ class ControlEdgeRule {
 	getValue() {
 		return this.element.value;
 	}
-};
+}
 const control_edge_rule = new ControlEdgeRule();
 
 class ControlReset {
