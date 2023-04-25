@@ -18,7 +18,6 @@ class Canvas {
 		this.context = this.element.getContext("2d");
 		this.width = this.element.width;
 		this.height = this.element.height;
-		console.log(this.width);
 	}
 	
 	drawRectES(ex, ey, sx, sy, color, fill) {
